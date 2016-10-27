@@ -5,6 +5,12 @@ Simple snow in your terminal
 ![Snow test](https://github.com/CodeSh/SnowScript/raw/master/snow.jpg)
 
 
+Cloning to use make:
+```bash
+git clone https://github.com/CodeSh/SnowScript.git snow
+cd snow
+```
+
 Install:
 ```bash
 sudo make install
