@@ -42,7 +42,7 @@ case $1 in
 		TypeSnow=$2
 	  elif [[ $3 == "-v" ]] || [[ $3 == "--velocity" ]]; then
 	  	TypeSnow=$2
-	  	number=$(echo $(switch_number $4))
+	  	number=$(echo `switch_number $4`)
 	  	if [[ $number ]]; then Velocity=$number; else echo ${ERROR[3]}; exit; fi
 	  fi
 	else echo ${ERROR[1]}; exit
@@ -50,7 +50,7 @@ case $1 in
 ;;
 
 "-v" | "--velocity")
-	number=$(echo $(switch_number $2))
+	number=$(echo `switch_number $2`)
 	if [[ $number ]]; then
 	  if [[ ! $3 ]]; then
 		Velocity=$number
